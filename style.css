@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1d2026;
+  min-height: 100vh;
+  width: 100%;
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.monsters-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.first-monster {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-monster p {
+  z-index: 3;
+  font-family: "Noto Serif", serif;
+  font-family: "Poppins", sans-serif;
+  transition: 0.5s all ease-in-out;
+  cursor: pointer;
+}
+
+.first-monster p:hover {
+  color: #4895ef;
+  transform: scale(1.1);
+}
+
+.second-monster {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 40px;
+}
+
+.switch-btn {
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  margin: 0px 40px 0px 15px;
+  background-color: #efefef;
+  z-index: 3;
+  transition: background-color 0.4s;
+}
+
+.switch-btn span {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-color: #999;
+  border-radius: 50%;
+  margin-left: 2px;
+  transition: background-color 0.4s, margin-left 0.5s;
+}
+
+section {
+  height: auto;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.section-title {
+  position: absolute;
+  top: 10px;
+  left: 5rem;
+  font-size: 100px;
+  color: white;
+  font-family: "Noto Serif", serif;
+  font-family: "Rubik Wet Paint", cursive;
+  z-index: 4;
+  text-align: center;
+}
+
+.section-sub-title {
+  position: absolute;
+  top: 9rem;
+  left: 30%;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  z-index: 4;
+  text-align: center;
+}
+
+.section-title span {
+  color: #4895ef;
+  z-index: 4;
+}
+
+.left-monster {
+  position: relative;
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lamp {
+  width: 157px;
+  height: 300px;
+  z-index: 2;
+}
+
+.light {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 200px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+.blue-monster {
+  width: 230px;
+  height: 250px;
+  margin: 50px 0px;
+  opacity: 0;
+  transition: opacity 0.9s;
+}
+
+.right-monster {
+  position: relative;
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.second-monster p {
+  z-index: 3;
+  font-family: "Noto Serif", serif;
+  font-family: "Poppins", sans-serif;
+  transition: 0.5s all ease-in-out;
+  cursor: pointer;
+}
+
+.second-monster p:hover {
+  color: #4895ef;
+  transform: scale(1.1);
+}
+
+.lamp-right {
+  width: 157px;
+  height: 300px;
+  z-index: 2;
+  position: absolute;
+  top: -10%;
+}
+
+.light-right {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 150px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+.pink-monster {
+  width: 300px;
+  height: 250px;
+  margin: 50px 0px;
+  position: absolute;
+  top: 35%;
+  opacity: 0;
+  transition: opacity 0.9s;
+}
+
+.active-btn {
+  background-color: green;
+}
+
+.active-btn span {
+  background-color: #fff;
+  margin-left: 31px;
+}
+
+.on {
+  opacity: 1;
+}
+
+footer {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  bottom: 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 1049px) {
+  .section-title {
+    font-size: 80px;
+  }
+  .section-sub-title {
+    font-size: 22px;
+    left: 8rem;
+  }
+}
+
+@media only screen and (max-width: 851px) {
+  .section-title {
+    font-size: 65px;
+    left: 3rem;
+    top: 2rem;
+  }
+  .section-sub-title {
+    font-size: 20px;
+    top: 8rem;
+  }
+}
+
+@media only screen and (max-width: 676px) {
+  .section-title {
+    font-size: 55px;
+    left: 2rem;
+    top: 2.1rem;
+  }
+  .section-sub-title {
+    font-size: 18px;
+    left: 5rem;
+    top: 7rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-monster {
+    height: 100vh;
+  }
+
+  .right-monster {
+    height: 100vh;
+  }
+
+  .first-monster p {
+    display: none;
+  }
+
+  .second-monster p {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 566px) {
+  .section-title {
+    font-size: 50px;
+    left: 1rem;
+  }
+
+  .left-monster {
+    height: 90vh;
+  }
+
+  .right-monster {
+    height: 90vh;
+  }
+  .section-sub-title {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10rem;
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+  }
+} ;
